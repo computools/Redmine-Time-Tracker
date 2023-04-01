@@ -1,5 +1,5 @@
-#ifndef ACTIONFACTORY_H
-#define ACTIONFACTORY_H
+#ifndef ACTION_FACTORY_H
+#define ACTION_FACTORY_H
 
 #include <QObject>
 
@@ -29,4 +29,4 @@ public:
     static QMenu *defaultMenu();
 };
 
-#endif // ACTIONFACTORY_H
+#endif // ACTION_FACTORY_H

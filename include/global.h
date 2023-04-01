@@ -4,12 +4,8 @@
 #include <QIcon>
 #include <QString>
 
-namespace Default {
-    namespace App {
+namespace Default::App {
         QIcon icon();
-
-        QString title();
     }
-}
 
 #endif // GLOBAL_H

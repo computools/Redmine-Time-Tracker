@@ -4,7 +4,7 @@
 
 static ActionFactory *instance = nullptr;
 
-ActionFactory::ActionFactory() {}
+ActionFactory::ActionFactory() = default;
 
 void ActionFactory::initialize(QObject *parent) {
     static bool initialized = false;
@@ -16,36 +16,36 @@ void ActionFactory::initialize(QObject *parent) {
 }
 
 QAction *ActionFactory::actionShow() {
-    static QAction *action = new QAction("Show", instance);
+    static auto *action = new QAction(tr("Show"), instance);
     return action;
 }
 
 QAction *ActionFactory::actionSettings() {
-    static QAction *action = new QAction("Settings", instance);
+    static auto *action = new QAction(tr("Settings"), instance);
     return action;
 }
 
 QMenu *ActionFactory::defaultMenu() {
-    static QMenu *menu = new QMenu(nullptr);
+    static auto *menu = new QMenu(nullptr);
     return menu;
 }
 
 QAction *ActionFactory::actionExit() {
-    static QAction *action = new QAction("Exit", instance);
+    static auto *action = new QAction(tr("Exit"), instance);
     return action;
 }
 
 QAction *ActionFactory::actionStart() {
-    static QAction *action = new QAction("Start", instance);
+    static auto *action = new QAction(tr("Start"), instance);
     return action;
 }
 
 QAction *ActionFactory::actionStop() {
-    static QAction *action = new QAction("Stop", instance);
+    static auto *action = new QAction(tr("Stop"), instance);
     return action;
 }
 
 QAction *ActionFactory::actionPause() {
-    static QAction *action = new QAction("Pause", instance);
+    static auto *action = new QAction(tr("Pause"), instance);
     return action;
 }

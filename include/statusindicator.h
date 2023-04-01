@@ -19,7 +19,7 @@ public:
 
     explicit StatusIndicator(QWidget *parent = nullptr);
 
-    ~StatusIndicator();
+    ~StatusIndicator() override;
 
 public slots:
 

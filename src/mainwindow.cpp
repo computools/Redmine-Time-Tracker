@@ -58,7 +58,7 @@ MainWindow::MainWindow(QWidget *parent) :
     settings->loadSettings();
     clock->show();
     this->setWindowIcon(Default::App::icon());
-    this->setWindowTitle(Default::App::title());
+    this->setWindowTitle(tr("Computools Timer Cheker"));
     startTimer(1000);
 }
 
