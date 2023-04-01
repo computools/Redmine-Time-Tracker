@@ -1,5 +1,5 @@
-#ifndef ADVANCEDSETTINGS_H
-#define ADVANCEDSETTINGS_H
+#ifndef ADVANCED_SETTINGS_H
+#define ADVANCED_SETTINGS_H
 
 #include <QWidget>
 #include "view/clockview.h"
@@ -14,9 +14,9 @@ class AdvancedSettings : public QWidget {
 Q_OBJECT
 
 public:
-    explicit AdvancedSettings(QWidget *parent = 0);
+    explicit AdvancedSettings(QWidget *parent = nullptr);
 
-    ~AdvancedSettings();
+    ~AdvancedSettings() override;
 
     void loadSettings();
 
@@ -45,4 +45,4 @@ private:
     QSettings *settings;
 };
 
-#endif // ADVANCEDSETTINGS_H
+#endif // ADVANCED_SETTINGS_H

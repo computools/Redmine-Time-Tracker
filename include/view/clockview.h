@@ -1,5 +1,5 @@
-#ifndef CLOCKVIEW_H
-#define CLOCKVIEW_H
+#ifndef CLOCK_VIEW_H
+#define CLOCK_VIEW_H
 
 #include <QWidget>
 
@@ -18,9 +18,9 @@ Q_OBJECT
 
 public:
 
-    explicit ClockView(QWidget *parent = 0);
+    explicit ClockView(QWidget *parent = nullptr);
 
-    ~ClockView();
+    ~ClockView() override;
 
 signals:
 
@@ -61,4 +61,4 @@ private:
     QColor colorBreak;
 };
 
-#endif // CLOCKVIEW_H
+#endif // CLOCK_VIEW_H

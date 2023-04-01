@@ -9,6 +9,7 @@
 #include "advancedsettings.h"
 #include "actionfactory.h"
 
+QT_USE_NAMESPACE
 
 void MainWindow::initDefaultMenu() {
     connect(ActionFactory::actionShow(), SIGNAL(triggered()), this, SLOT(show()));

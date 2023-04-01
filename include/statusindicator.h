@@ -1,5 +1,5 @@
-#ifndef STATUSINDICATOR_H
-#define STATUSINDICATOR_H
+#ifndef STATUS_INDICATOR_H
+#define STATUS_INDICATOR_H
 
 #include <QWidget>
 
@@ -29,4 +29,4 @@ private:
     Ui::StatusIndicator *ui;
 };
 
-#endif // STATUSINDICATOR_H
+#endif // STATUS_INDICATOR_H

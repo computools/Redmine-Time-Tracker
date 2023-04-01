@@ -2,6 +2,8 @@
 #include <QMenu>
 #include <QAction>
 
+QT_USE_NAMESPACE
+
 static ActionFactory *instance = nullptr;
 
 ActionFactory::ActionFactory() = default;

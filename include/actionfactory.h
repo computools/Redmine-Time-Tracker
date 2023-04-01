@@ -12,7 +12,7 @@ class ActionFactory :
     ActionFactory();
 
 public:
-    static void initialize(QObject *parent);
+    static void initialize(QObject *parent = nullptr);
 
     static QAction *actionShow();
 

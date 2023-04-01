@@ -16,9 +16,9 @@ AdvancedSettings::~AdvancedSettings() {
 }
 
 void AdvancedSettings::loadSettings() {
-    const QColor work = settings->value("colors/work", QColor(150, 255, 150)).value<QColor>();
-    const QColor pause = settings->value("colors/pause", QColor(255, 255, 120)).value<QColor>();
-    const QColor stop = settings->value("colors/stop", QColor(255, 100, 100)).value<QColor>();
+    const auto work = settings->value("colors/work", QColor(150, 255, 150)).value<QColor>();
+    const auto pause = settings->value("colors/pause", QColor(255, 255, 120)).value<QColor>();
+    const auto stop = settings->value("colors/stop", QColor(255, 100, 100)).value<QColor>();
     signalColorChange(ClockState::WORK, work);
     signalColorChange(ClockState::PAUSE, pause);
     signalColorChange(ClockState::STOP, stop);

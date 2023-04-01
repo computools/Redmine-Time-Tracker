@@ -1,6 +1,8 @@
 #include "statusindicator.h"
 #include "ui_statusindicator.h"
 
+QT_USE_NAMESPACE
+
 StatusIndicator::StatusIndicator(QWidget *parent) :
         QWidget(parent),
         ui(new Ui::StatusIndicator) {
