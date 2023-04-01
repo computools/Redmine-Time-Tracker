@@ -4,26 +4,29 @@
 #include <QWidget>
 
 namespace Ui {
-  class StatusIndicator;
+    class StatusIndicator;
 }
 
-class StatusIndicator : public QWidget
-{
-  Q_OBJECT
+class StatusIndicator : public QWidget {
+Q_OBJECT
 
 public:
-  enum State{
-    WORK,
-    PAUSE,
-    BREAK
-  };
-  explicit StatusIndicator(QWidget *parent = 0);
-  ~StatusIndicator();
+    enum State {
+        WORK,
+        PAUSE,
+        BREAK
+    };
+
+    explicit StatusIndicator(QWidget *parent = nullptr);
+
+    ~StatusIndicator();
 
 public slots:
-  void setState(int state);
+
+    static void setState(int state);
+
 private:
-  Ui::StatusIndicator *ui;
+    Ui::StatusIndicator *ui;
 };
 
 #endif // STATUSINDICATOR_H
